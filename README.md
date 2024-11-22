@@ -96,3 +96,38 @@ sample estimates:
 
 ![image](https://github.com/user-attachments/assets/17a9d45a-3484-45df-9685-68ea010622b6)
 
+#Test of correlation.
+
+Spearman's rank correlation coefficient is appropriate for assessing correlation as our data set consist of non-parametric data. 
+Spearman's Rho is simpler to calculate and requires fewer resources in the majority of statistical software programs.
+
+#Code and Output of computing Spearman's correlation to assess correlation.
+
+spearman_test <- cor.test(insurance$age, insurance$charges, method = "spearman") 
+
+Warning message:
+
+In cor.test.default(insurance$age, insurance$charges, method = "spearman") :
+
+  Cannot compute exact p-value with ties
+  
+  print(spearman_test)
+
+	Spearman's rank correlation rho
+
+data:  insurance$age and insurance$charges
+
+S = 185881923, p-value < 2.2e-16
+
+alternative hypothesis: true rho is not equal to 0
+
+sample estimates:
+
+      rho 
+      
+0.5343921 
+
+#Inference
+
+
+
