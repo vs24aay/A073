@@ -74,4 +74,20 @@ lines(x, yn, col="blue")
 
 #The normal curve overlay does not follow the shape of the underlying data, so for our analysis we  use the non-parametric test for correlation that does not assume normality: Spearman’s Rho or Kendal’s Tau
 
+kendall_test <- cor.test(insurance$age, insurance$charges, method = "kendall")
+
+print(kendall_test)
+
+Ouput for Kendall's test
+
+	Kendall's rank correlation ta
+
+data:  x and y
+z = 25.758, p-value < 2.2e-16
+alternative hypothesis: true tau is not equal to 0
+sample estimates:
+      tau 
+0.4753024
+
+![image](https://github.com/user-attachments/assets/17a9d45a-3484-45df-9685-68ea010622b6)
 
