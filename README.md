@@ -128,6 +128,23 @@ sample estimates:
 0.5343921 
 
 #Inference
+The test gives a result of roughly 0.534. This implies that in our sample, there is a moderately positive correlation between age and personal insurance charges. 
+
+A strong positive correlation would be indicated by a rho value closer to 1, whereas a strong  negative correlation would be indicated by a rho number closer to 
+
+-1 . 
+
+Also, "< 2.2e-16" is the reported p-value, which is  negligible. It shows  null hypothesis (that there is no correlation between age and charges) can be 
+
+rejected confidently . In other words, there is a statistically significant correlation between insurance charges and age(Alternative hypothesis).
+
+
+Additionally, Tie warning: This occurs as a result of the cor.test function using the data rank to calculate the Spearman correlation. It may be difficult to 
+
+determine the precise p-value if there are identical values (ties). In such situations, R will make use of an approximation. The p-value may not be precise, but 
+
+the correlation coefficient (rho) remains unaffected.
+
 
 
 
