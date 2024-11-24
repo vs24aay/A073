@@ -145,6 +145,7 @@ determine the precise p-value if there are identical values (ties). In such sit
 
 the correlation coefficient (rho) remains unaffected.
 
+![rstudio](https://github.com/user-attachments/assets/b0eaa479-a355-445f-b20f-a0f879435f8c)
 
 
 
